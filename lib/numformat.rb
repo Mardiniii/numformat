@@ -3,7 +3,7 @@
 # f.format(12_485_485) => "12M"
 # f.format(234) => "234"
 
-class NumberFormat
+class NumFormat
   def format(number)
     return number.to_s if number < 1000
     return thousands_to_human(number) if number < 1_000_000
