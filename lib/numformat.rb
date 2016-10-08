@@ -5,13 +5,9 @@
 
 class NumberFormat
   def format(number)
-    if number < 1_000
-      number.to_s
-    elsif number < 1_000_000
-      thousands_to_human(number)
-    else
-      millions_to_human(number)
-    end
+    return number.to_s if number < 1000
+    return thousands_to_human(number) if number < 1_000_000
+    millions_to_human(number)
   end
 
   private
