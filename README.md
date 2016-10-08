@@ -1,4 +1,4 @@
-# Full Stack WEB Developer Bootcamp By Make It Real - Ruby Gems Workshop
+# NumFormat Gem - Ruby Gems Workshop
 
 This repositorie contains an excercise creating a Ruby gem to format numbers.
 
@@ -20,4 +20,4 @@ f.format(17456789) #=> '17.4M'
 f.format(13000000) #=> '13M'
 ```
 
-Made with love at Full Stack WEB Developer Bootcamp Medellin by Make It Real Camp
+Made with :heart: at Full Stack WEB Developer Bootcamp Medellin by Make It Real Camp
