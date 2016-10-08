@@ -13,12 +13,12 @@ class NumFormat
   private
 
   def thousands_to_human(number)
-    n = (number / 1_000.0).round(1)
+    n = number % 1000 == 0 ? (number / 1_000) : (number / 1_000.0).round(1)
     "#{n}K"
   end
 
   def millions_to_human(number)
-    n = (number / 1_000_000.0).round(1)
+    n = number % 1000000 == 0 ? (number / 1_000_000) : (number / 1_000_000.0).round(1)
     "#{n}M"
   end
 end
